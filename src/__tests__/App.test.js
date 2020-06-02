@@ -1,10 +1,14 @@
-import React from 'react';
-import Enzyme, {shallow} from 'enzyme';
+import React from "react";
+import { shallow } from "enzyme";
 
-import App from '../App';
+import { findByTestAttr } from "../../tests/testUtils";
+import App from "../App";
 
-
-it('renders learn react link', () => {
-  const wrapper = shallow(<App />);
-  expect(wrapper).toBeTruthy();
+const setup = () => {
+  return shallow(<App />);
+};
+it("App renders without error", () => {
+  const wrapper = setup();
+  const component = findByTestAttr(wrapper, "component-app");
+  expect(component.length).toBe(1);
 });
