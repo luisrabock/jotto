@@ -43,7 +43,3 @@ describe("language string tests", () => {
     );
   });
 });
-
-it("test unMock warn", () => {
-  console.warn("TEST");
-});

@@ -18,4 +18,18 @@ it("renders without error", () => {
 it("does not throw a warning with expected props", () => {
   checkProps(LanguagePicker, { setLanguage: jest.fn() });
 });
-it("calls setLanguage prop upon click", () => {});
+it("renders non-zero language icons", () => {
+  const wrapper = setup();
+  const languageIcons = findByTestAttr(wrapper, "language-icon");
+  expect(languageIcons.length).toBeGreaterThan(0);
+});
+
+it("calls setLanguage prop upon click", () => {
+  const wrapper = setup();
+  const languageIcons = findByTestAttr(wrapper, "language-icon");
+
+  const firstIcon = languageIcons.first();
+  firstIcon.simulate("click");
+
+  expect(mockSetLanguage).toHaveBeenCalled();
+});
