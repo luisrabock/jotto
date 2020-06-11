@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 
 import { findByTestAttr, checkProps } from "../../tests/testUtils";
-import LanguagePicker from "../languagePicker";
+import LanguagePicker from "../LanguagePicker";
 
 const mockSetLanguage = jest.fn();
 const setup = () => {

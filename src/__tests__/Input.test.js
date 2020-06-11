@@ -3,7 +3,7 @@ import { shallow, mount } from "enzyme";
 
 import { findByTestAttr, checkProps } from "../../tests/testUtils";
 import Input from "../Input";
-import LanguageContext from "../contexts/languageContext";
+import LanguageContext from "../contexts/LanguageContext";
 
 const setup = ({ language, secretWord }) => {
   language = language || "en";

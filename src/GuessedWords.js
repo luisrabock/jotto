@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import languageContext from "./contexts/languageContext";
+import languageContext from "./contexts/LanguageContext";
 import stringsModule from "./helpers/strings";
 
 const GuessedWords = (props) => {

@@ -1,5 +1,3 @@
-import { string } from "prop-types";
-
 const languageStrings = {
   en: {
     congrats: "Congratulations! You guessed the word!",

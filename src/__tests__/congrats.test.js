@@ -1,17 +1,20 @@
 import React from "react";
-import { shallow, mount } from "enzyme";
-import checkPropTypes from "check-prop-types";
+import { mount } from "enzyme";
 
-import LanguageContext from "../contexts/languageContext";
+import LanguageContext from "../contexts/LanguageContext";
+import successContext from "../contexts/SucessContext";
+import { findByTestAttr } from "../../tests/testUtils";
+
 import Congrats from "../Congrats";
-import { findByTestAttr, checkProps } from "../../tests/testUtils";
 
 const setup = ({ success, language }) => {
   language = language || "en";
   success = success || false;
   return mount(
     <LanguageContext.Provider value={language}>
-      <Congrats success={success} />
+      <successContext.SuccessProvider value={[success, jest.fn()]}>
+        <Congrats success={success} />
+      </successContext.SuccessProvider>
     </LanguageContext.Provider>
   );
 };
@@ -33,19 +36,14 @@ it("Renders without error", () => {
   expect(component.length).toBe(1);
 });
 
-it("Renders no text when `Success` prop is false", () => {
+it("Renders no text when `Success` is false", () => {
   const wrapper = setup({ success: false });
   const component = findByTestAttr(wrapper, "component-congrats");
   expect(component.text()).toBe("");
 });
 
-it("Renders no empty congrats when `success` prop is true", () => {
+it("Renders no empty congrats when `success` is true", () => {
   const wrapper = setup({ success: true });
   const message = findByTestAttr(wrapper, "component-congrats");
   expect(message.text().length).not.toBe(0);
-});
-
-it("Does not throw a warning with expected props", () => {
-  const expectedProps = { success: false };
-  checkProps(Congrats, expectedProps);
 });

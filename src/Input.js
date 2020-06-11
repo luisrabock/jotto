@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import StringsModule from "./helpers/strings";
-import LanguageContext from "./contexts/languageContext";
+import LanguageContext from "./contexts/LanguageContext";
 
 const Input = (props) => {
   const language = React.useContext(LanguageContext);
