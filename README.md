@@ -20,6 +20,8 @@
 
 Jotto is a very fun word game. The server chooses a random word and the player tries to guess the word.
 
+The project was used to run tests with hooks and context API. The code has 95% coverage.
+
 
 
 ## 🚀&nbsp; Installation and Documentation
@@ -45,7 +47,7 @@ Whether you are helping fixing bugs, proposing new feature, improving the app - 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
 
   
-Glad to help you. My e-mail account is the best form of contact: .**luis@rocketlab.com.br** .
+Glad to help you. My e-mail account is the best form of contact: **luis@rocketlab.com.br** .
 
 
 ## 🤝&nbsp; Found a bug? Missing a specific feature?
