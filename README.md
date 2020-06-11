@@ -20,7 +20,9 @@
 
 Jotto is a very fun word game. The server chooses a random word and the player tries to guess the word.
 
-The project was used to run tests with hooks and context API. The code has 95% coverage.
+The project was used to run tests with hooks and context API.
+
+The code has 95% coverage.
 
 
 
@@ -32,7 +34,7 @@ Clone repo: https://github.com/luisrabock/jotto.git
 
 🧪 **Development environment**:
 
-Enter the server folder (backend) theninstall the dependencies:
+Enter the server folder (backend) then install the dependencies:
 
 ```npm install```
 
