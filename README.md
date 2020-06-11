@@ -29,16 +29,26 @@ The project was used to run tests with hooks and context API. The code has 95% c
 You need to install  [Node.js](https://nodejs.org/en/download/)  and  [Npm]([https://www.npmjs.com/](https://www.npmjs.com/))  first.
 Clone repo: https://github.com/luisrabock/jotto.git
 
+🧪 **Development environment**:
+
 Enter the server folder (backend) theninstall the dependencies:
+
 ```npm install```
+
 Start backend server:
-```npm start```
-Enter the client folder (frontend),  then install the dependencies:
-```npm install```
-Start frontend server:
+
 ```npm start```
 
-Ready, the application is running in a development environment!!
+Enter the client folder (frontend),  then install the dependencies:
+
+```npm install```
+
+Start frontend server:
+
+```npm start```
+
+The application is running in a development environment!!
+
 ## ❤️&nbsp; Community and Contributions
 
 Whether you are helping fixing bugs, proposing new feature, improving the app - **I love to have you as part of the project**.
