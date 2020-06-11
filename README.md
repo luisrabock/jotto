@@ -27,6 +27,7 @@ The project was used to run tests with hooks and context API. The code has 95% c
 ## 🚀&nbsp; Installation and Documentation
 
 You need to install  [Node.js](https://nodejs.org/en/download/)  and  [Npm]([https://www.npmjs.com/](https://www.npmjs.com/))  first.
+
 Clone repo: https://github.com/luisrabock/jotto.git
 
 🧪 **Development environment**:
